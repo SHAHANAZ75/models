@@ -21,4 +21,8 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('add_topic/',views.create_topic,name="add_topic"),
     path('add_webpage/',views.create_webpage,name="add_webpage"),
+    path('display_topic/',views.display_topic,name="display_topic"),
+    path('display_topic/<id>',views.display_topics,name="display_topic"),
+    path('display_web/',views.display_webpage,name="display_webpage"),
+    path('display_web/<id>',views.display_webpage,name="display_webpage"),
 ]
